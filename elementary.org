@@ -1,0 +1,51 @@
+* Elementary
+
+** 1. Nothing but the Truth
+#+BEGIN_SRC clojure
+true
+#+END_SRC
+
+** 2. Simple Math
+#+BEGIN_SRC clojure
+4
+#+END_SRC
+
+** 3. Intro to Strings 
+#+BEGIN_SRC clojure
+"HELLO WORLD"
+#+END_SRC
+
+** 4. Intro to Lists
+#+BEGIN_SRC clojure
+(list :a :b :c)
+#+END_SRC
+
+** 5. Lists: conj
+#+BEGIN_SRC clojure
+'(1 2 3 4)
+#+END_SRC
+
+** 6. Intro to Vectors
+#+BEGIN_SRC clojure
+[:a :b :c]
+#+END_SRC
+
+** 7. Vectors: conj
+#+BEGIN_SRC clojure
+[1 2 3 4]
+#+END_SRC
+
+** 8. Intro to Sets
+#+BEGIN_SRC clojure
+#{:a :b :c :d}
+#+END_SRC
+
+** 9. Sets: conj
+#+BEGIN_SRC clojure
+2
+#+END_SRC
+
+** 10. Intro to Maps
+#+BEGIN_SRC clojure
+10
+#+END_SRC
