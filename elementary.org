@@ -17,7 +17,7 @@ true
 
 ** 4. Intro to Lists
 #+BEGIN_SRC clojure
-(list :a :b :c)
+:a :b :c
 #+END_SRC
 
 ** 5. Lists: conj
@@ -27,7 +27,7 @@ true
 
 ** 6. Intro to Vectors
 #+BEGIN_SRC clojure
-[:a :b :c]
+:a :b :c
 #+END_SRC
 
 ** 7. Vectors: conj
@@ -47,5 +47,46 @@ true
 
 ** 10. Intro to Maps
 #+BEGIN_SRC clojure
-10
+20
 #+END_SRC
+
+** 11. Maps: conj
+#+BEGIN_SRC clojure
+[:b 2]
+#+END_SRC
+
+** 12. Intro to Sequences
+#+BEGIN_SRC clojure
+3
+#+END_SRC
+
+** 13. Sequences: rest
+#+BEGIN_SRC clojure
+[20 30 40]
+#+END_SRC
+
+** 14. Intro to Functions
+#+BEGIN_SRC clojure
+8
+#+END_SRC
+
+** 15. Double Down
+#+BEGIN_SRC clojure
+* 2
+#+END_SRC
+
+** 16. Hello World
+#+BEGIN_SRC clojure
+#(str "Hello, " % "!")
+#+END_SRC
+
+** 17. Sequences: map
+#+BEGIN_SRC clojure
+[6 7 8]
+#+END_SRC
+
+** 18. Sequences: filter
+#+BEGIN_SRC clojure
+[6, 7]
+#+END_SRC
+
