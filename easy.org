@@ -1,0 +1,11 @@
+* Easy
+
+** 19. Last Element
+#+BEGIN_SRC clojure
+(comp first reverse)
+#+END_SRC
+
+** 20. Penultimate Element
+#+BEGIN_SRC clojure
+(comp second reverse)
+#+END_SRC
