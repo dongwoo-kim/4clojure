@@ -16,7 +16,6 @@
   (last (take (inc n) s)))
 #+END_SRC
 
-
 ** 22. Count a Sequence
 #+BEGIN_SRC clojure
 #(reduce (fn [x y] (inc x)) 0 %)
@@ -46,6 +45,36 @@
 ** 27. Palindrome Detector
 #+BEGIN_SRC clojure
 #(= (seq %) (seq (reverse %)))
+#+END_SRC
+
+** 28. Flatten a Sequence
+#+BEGIN_SRC clojure
+#(filter (complement sequential?) (tree-seq sequential? seq %))
+#+END_SRC
+
+** 29. Get the Caps
+#+BEGIN_SRC clojure
+#(apply str (re-seq #"[A-Z]" %))
+#+END_SRC
+
+** 30. Compress a Sequence
+#+BEGIN_SRC clojure
+#(map first (partition-by identity %))
+#+END_SRC
+
+** 31. Pack a Sequence
+#+BEGIN_SRC clojure
+#(partition-by identity %)
+#+END_SRC
+
+** 32. Duplicate a Sequence
+#+BEGIN_SRC clojure
+(fn [v] mapcat #(repeat %) v))
+#+END_SRC
+
+** 33. Replicate a Sequence
+#+BEGIN_SRC clojure
+#(mapcat (partial repeat %2) %1)
 #+END_SRC
 
 ** 38. Maximum Value
@@ -100,6 +129,13 @@ mapcat vector
 ** 51. Advanced Destructuring
 #+BEGIN_SRC clojure
 [1 2 3 4 5]
+#+END_SRC
+
+** 55. Count Occurrences
+#+BEGIN_SRC clojure
+#(reduce (fn [m v] (assoc m v (inc (m v 0)))) {} %)
+
+#(into {} (for [[k v] (group-by identity %)] [k (count v)]))
 #+END_SRC
 
 ** Intro to Destructuring 2
