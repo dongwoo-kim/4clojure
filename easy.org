@@ -77,6 +77,11 @@
 #(mapcat (partial repeat %2) %1)
 #+END_SRC
 
+** 34. Implement range
+#+BEGIN_SRC clojure
+#(take (- %2 %1) (iterate inc %1))
+#+END_SRC
+
 ** 38. Maximum Value
 #+BEGIN_SRC clojure
 (fn [& nums] 
@@ -138,4 +143,13 @@ mapcat vector
 #(into {} (for [[k v] (group-by identity %)] [k (count v)]))
 #+END_SRC
 
-** Intro to Destructuring 2
+** 61. Advanced Destructuring
+#+BEGIN_SRC clojure
+#(into {} (map hash-map %1 %2))
+#+END_SRC
+
+** 62. Advanced Destructuring
+#+BEGIN_SRC clojure
+(fn it [f x]
+  (lazy-seq (cons x (it f (f x)))))
+#+END_SRC

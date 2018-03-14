@@ -90,3 +90,18 @@ true
 [6, 7]
 #+END_SRC
 
+** 35. Local bindings
+#+BEGIN_SRC clojure
+7
+#+END_SRC
+
+** 36. Let it Be
+#+BEGIN_SRC clojure
+[x 7 y 3 z 1]
+#+END_SRC
+
+** 37. Regular Expressions
+#+BEGIN_SRC clojure
+"ABC"
+#+END_SRC
+
