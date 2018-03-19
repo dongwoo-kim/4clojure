@@ -153,3 +153,24 @@ mapcat vector
 (fn it [f x]
   (lazy-seq (cons x (it f (f x)))))
 #+END_SRC
+
+** 66. Greatest Common Divisor
+#+BEGIN_SRC clojure
+(fn it [f x]
+  (lazy-seq (cons x (it f (f x)))))
+#+END_SRC
+
+** 81. Set Intersection
+#+BEGIN_SRC clojure
+#(set (filter %1 %2))
+#+END_SRC
+
+** 83. A Half-Truth
+#+BEGIN_SRC clojure
+not=
+#+END_SRC
+
+** 107. Simple closures
+#+BEGIN_SRC clojure
+(fn [x] #(reduce * (repeat x %)))
+#+END_SRC
