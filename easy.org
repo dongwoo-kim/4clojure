@@ -170,7 +170,25 @@ mapcat vector
 not=
 #+END_SRC
 
+** 90. Cartesian Product
+#+BEGIN_SRC clojure
+#(set (for [x %1 y %2] [x y]))
+#+END_SRC
+** 99. Product Digits
+#+BEGIN_SRC clojure
+(fn [x y] 
+  (map #(- (int %) (int \0)) (str (* x y))))
+#+END_SRC
 ** 107. Simple closures
 #+BEGIN_SRC clojure
 (fn [x] #(reduce * (repeat x %)))
 #+END_SRC
+** 166. Comparisons
+#+BEGIN_SRC clojure
+(fn [lt x y] 
+  (cond 
+    (lt x y) :lt 
+    (lt y x) :gt 
+    :else :eq))
+#+END_SRC
+
